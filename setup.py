@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="DTKit",
-    version="0.1",
+    version="0.2",
     description=("Data Type Kit, A package that"
                   "offers new data types to use in Python"),
     author="Chase Galloway",
