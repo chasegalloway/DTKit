@@ -29,9 +29,9 @@ jobs:
 
     - name: Run linters and tests
       run: |
-        # Linter (adjust options to suit your project)
+        # Linter 
         flake8 .
-        # Tests (use your testing framework)
+        # Tests 
         pytest
 
   publish:
