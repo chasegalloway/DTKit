@@ -1,4 +1,4 @@
-test.py
+tests/
 dtkit/__pycache__/
 DTKit.egg-info/
 dist/

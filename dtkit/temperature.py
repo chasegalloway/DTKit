@@ -29,16 +29,22 @@ class Temperature:
         elif self.unit == "K":
             return self.value
 
-    def convert(self, target_unit):
-        target_unit = target_unit.upper()
-        if target_unit == "C":
+    def convert(self, unit):
+        unit = unit.upper()
+        if unit == "C":
             return Temperature(self.to_celsius(), "C")
-        elif target_unit == "F":
+        elif unit == "F":
             return Temperature(self.to_fahrenheit(), "F")
-        elif target_unit == "K":
+        elif unit == "K":
             return Temperature(self.to_kelvin(), "K")
         else:
             raise ValueError("Target unit must be 'C', 'F', or 'K'")
+        
+    def is_freezing(self):
+        return self.to_celsius() <= 0
+
+    def is_boiling(self):
+        return self.to_celsius() >= 100
 
     def __add__(self, other):
         if not isinstance(other, Temperature):
