@@ -2,3 +2,4 @@ tests/
 dtkit/__pycache__/
 DTKit.egg-info/
 dist/
+.vscode/
