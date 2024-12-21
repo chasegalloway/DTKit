@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="DTKit",
     version="0.3",
-    description=("A package that offers new data types to use in everyday Python use."),
+    description=("A package that offers new data types for everyday Python use."),
     author="Chase Galloway",
     author_email="chase.h.galloway21@gmail.com",
     packages=find_packages(),

@@ -43,6 +43,9 @@ class Color:
             hue *= 60
         return round(hue, 2), round(saturation * 100, 2), round(lightness * 100, 2)
 
+    def from_hsl(self):
+        
+
     @staticmethod
     def range(start_color, end_color, steps):
         if not isinstance(start_color, Color) or not isinstance(end_color, Color):
@@ -50,6 +53,8 @@ class Color:
 
         if steps < 2:
             raise ValueError("There must be at least 2 steps to create a range")
+        elif steps > 9999:
+            raise ValueError("There can be at most 9999 steps in a range")
 
         color_range = []
         for i in range(steps):
